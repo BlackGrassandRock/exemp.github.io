@@ -3,9 +3,6 @@
   <title>IAEA ZODIAC Respiratory Disease Phenotype Observatory</title>
   <link type="text/css" rel="stylesheet" href="css/stylesheet.css" media="all" />
   <link type="text/css" rel="stylesheet" href="css/stylesheet_2.css" media="all" />
-   <style>
-    #content { display: none; }
-  </style>
 </head>
 
 
@@ -354,11 +351,6 @@
         </div>
       </div>
     </div>
-  <div id="login" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
-    <input type="password" id="password" placeholder="Password" style="margin-bottom: 10px; padding: 5px;">
-    <button onclick="checkPassword()" style="padding: 5px 10px;">Login</button>
-    <p id="error" style="color: red; margin-top: 10px;"></p>
-  </div>
 
 
   <div  id="content" class="section section-main-content">
@@ -896,17 +888,5 @@
     </footer>
 
       <a href="#" class="btn btn-default btn-sm go-top"><i class="fa fa-chevron-up fa-fw"></i></a>
-
-  <script>
-    function checkPassword() {
-      const pass = document.getElementById('password').value;
-      if (pass === 'iaealog') {
-        document.getElementById('login').style.display = 'none';
-        document.getElementById('content').style.display = 'block';
-      } else {
-        document.getElementById('error').textContent = 'Incorect password';
-      }
-    }
-  </script>
 </body>
 </html>
